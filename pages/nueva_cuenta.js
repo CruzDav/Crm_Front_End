@@ -45,7 +45,7 @@ const nuevacuenta = () => {
               <div className="mb-5">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlForP="nombre"
+                  htmlFor="nombre"
                 >
                   Nombre
                 </label>
@@ -69,7 +69,7 @@ const nuevacuenta = () => {
               <div className="mb-5">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlForP="apellido"
+                  htmlFor="apellido"
                 >
                   Apellido
                 </label>
@@ -92,7 +92,7 @@ const nuevacuenta = () => {
               <div className="mb-5">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlForP="email"
+                  htmlFor="email"
                 >
                   Email
                 </label>
@@ -115,7 +115,7 @@ const nuevacuenta = () => {
               <div className="mb-5">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlForP="Password"
+                  htmlFor="Password"
                 >
                   Password
                 </label>
