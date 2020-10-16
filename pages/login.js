@@ -1,7 +1,16 @@
 import React from "react";
 import Layout from "../components/layout";
+import { useFormik } from "formik";
+import * as YUP from "yup";
 
 const login = () => {
+  // Validacion de formulario
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+  });
   return (
     <>
       <Layout>
@@ -23,21 +32,23 @@ const login = () => {
                   id="Email"
                   type="Email"
                   placeholder="Email de Usuario" // nombre al fondo
+                  //value = {formik.values.email} // valida cada campo
                 ></input>
               </div>
 
               <div className="mb-5">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlForP="Password"
+                  htmlForP="password"
                 >
                   Password
                 </label>
                 <input //inp"sombra,-app--, borde  redondeo,all ancho,paddin en y, paddin en x, texto gris obsc, ensancha todo, si hay cursor no linea de borde, si hay cursor sombrear linea
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" //
-                  id="Password" //
-                  type="Password"
+                  id="password" //
+                  type="password"
                   placeholder="Password de Usuario" // nombre al fondo
+                  //value = {formik.values.password} // valida cada campo
                 ></input>
               </div>
 
